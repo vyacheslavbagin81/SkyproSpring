@@ -17,6 +17,7 @@ public class Test {
         System.out.println(car + " готов к работе");
         System.out.println(bus + " готов к работе");
         System.out.println(pickup + " готов к работе");
+        System.out.println();
 
         List<Driver> drivers = new ArrayList<>();
         drivers.add(context.getBean(DriverB.class));
