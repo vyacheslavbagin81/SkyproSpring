@@ -10,7 +10,6 @@ public abstract class Transport {
     public String getModel() {
         return model;
     }
-
     @Override
     public String toString() {
         return model;
