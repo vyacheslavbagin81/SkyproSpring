@@ -21,9 +21,9 @@ public class Test {
         System.out.println();
 
         List<Driver> drivers = new ArrayList<>();
-        drivers.add(context.getBean(DriverB.class));
-        drivers.add(context.getBean(DriverC.class));
-        drivers.add(context.getBean(DriverD.class));
+        drivers.add(context.getBean("driverB",Driver.class));
+        drivers.add(context.getBean("driverC",Driver.class));
+        drivers.add(context.getBean("driverD",Driver.class));
 
         drivers.forEach(driver -> System.out.println(driver.printDriver()));
     }
