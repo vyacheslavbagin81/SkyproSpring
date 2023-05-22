@@ -5,6 +5,7 @@ import Transport.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+
 @Configuration
 public class AppConfig {
     @Bean(name = "car")
@@ -23,17 +24,17 @@ public class AppConfig {
     }
 
     @Bean(name = "driverB")
-    public DriverB getDriverB() {
-        return new DriverB("Vasiliy", getCarBean());
+    public Driver getDriverB() {
+        return new Driver("Vasiliy", getCarBean());
     }
 
     @Bean(name = "driverC")
-    public DriverC getDriverC() {
-        return new DriverC("Petr", getPickupBean());
+    public Driver getDriverC() {
+        return new Driver("Petr", getPickupBean());
     }
 
     @Bean(name = "driverD")
-    public DriverD getDriverD() {
-        return new DriverD("Ivan", getBusBean());
+    public Driver getDriverD() {
+        return new Driver("Ivan", getBusBean());
     }
 }
